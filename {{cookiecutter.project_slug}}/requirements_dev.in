@@ -1,3 +1,5 @@
+-c requirements.txt
+-r requirements.txt
 bump2version
 wheel
 watchdog
