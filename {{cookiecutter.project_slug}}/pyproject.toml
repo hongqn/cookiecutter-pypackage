@@ -1,0 +1,5 @@
+{% if cookiecutter.use_black == 'y' %}
+[tool.black]
+line-length = 88
+skip-string-normalization = true
+{% endif %}
