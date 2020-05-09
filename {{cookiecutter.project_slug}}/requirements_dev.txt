@@ -14,5 +14,8 @@ pytest==4.6.5
 pytest-runner==5.1{% endif %}
 {% if cookiecutter.use_black == 'y' -%}
 black==19.10b0{% endif %}
+{% if cookiecutter.use_isort == 'y' -%}
+isort==4.3.21{% endif %}
 pip-tools==5.1.2
 pre-commit==2.3.0
+pdbpp==0.10.2

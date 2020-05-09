@@ -15,5 +15,8 @@ pytest
 pytest-runner{% endif %}
 {% if cookiecutter.use_black == 'y' -%}
 black{% endif %}
+{% if cookiecutter.use_isort == 'y' -%}
+isort{% endif %}
 pip-tools
 pre-commit
+pdbpp

@@ -24,3 +24,10 @@ repos:
         name: Generate requirements_dev.txt
         files: ^requirements_dev\.(in|txt)$
         args: [ requirements_dev.in ]
+
+{% if cookiecutter.use_isort == 'y' %}
+  - repo: https://github.com/timothycrosley/isort
+    rev: 4.3.21-2
+    hooks:
+      - id: isort
+{% endif %}
